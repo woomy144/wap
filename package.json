@@ -1,9 +1,9 @@
 {
   "name": "arras",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "./server/server.js",
   "scripts": {
-    "start": "node server"
+    "start": "node server/server"
   },
   "dependencies": {
     "google-closure-library": "^20190819.0.0",
