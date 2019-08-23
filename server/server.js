@@ -4928,12 +4928,15 @@ let server = http.createServer((req, res) => {
   let { pathname } = url.parse(req.url)
   switch (pathname) {
     case '/':
-      window.location.assign(window.location.pathname + "../client/index.html");
+    res.end(`<!DOCTYPE html><h3>arras-unl.glitch.me`)
     break
     case '/mockups.json':
       res.setHeader('Access-Control-Allow-Origin', '*')
       res.writeHead(200)
       res.end(mockupJsonData)
+    break
+    case '/client/index.html':
+      res.end()
     break
     default:
       res.writeHead(404)
