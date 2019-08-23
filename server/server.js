@@ -4935,7 +4935,7 @@ let server = http.createServer((req, res) => {
     case '/':
       fs.readFile(indpath, function(err, data) {
        res.writeHead(200, {'Content-Type': 'text/html'});
-       res.end(data);
+       res.end(<link rel="stylesheet" href="/main.css"> + data);
        if (err) throw err;
       });
     break
