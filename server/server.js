@@ -4928,7 +4928,7 @@ let server = http.createServer((req, res) => {
   let { pathname } = url.parse(req.url)
   switch (pathname) {
     case '/':
-    res.end(`<!DOCTYPE html><h3>arras-unl.glitch.me`)
+    res.end(indexfile)
     break
     case '/mockups.json':
       res.setHeader('Access-Control-Allow-Origin', '*')
