@@ -4923,6 +4923,9 @@ var speedcheckloop = (() => {
 })();
 
 var fs = require('fs');
+var path = require('path');
+
+var indpath = path.join(__dirname, '..', 'client', 'index.html');
 
 /** BUILD THE SERVERS **/  
 // Turn the server on
@@ -4930,7 +4933,7 @@ let server = http.createServer((req, res) => {
   let { pathname } = url.parse(req.url)
   switch (pathname) {
     case '/':
-      fs.readFile('../client/index.html', function(err, data) {
+      fs.readFile(indpath, function(err, data) {
        res.writeHead(200, {'Content-Type': 'text/html'});
        res.end(data);
        if (err) throw err;
