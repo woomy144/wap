@@ -4922,21 +4922,24 @@ var speedcheckloop = (() => {
     };
 })();
 
+var fs = require('fs');
+
 /** BUILD THE SERVERS **/  
 // Turn the server on
 let server = http.createServer((req, res) => {
   let { pathname } = url.parse(req.url)
   switch (pathname) {
     case '/':
-      res.end(`<!DOCTYPE HTML><meta http-equiv="refresh" content="0; URL='http://new-website.com'" />`)
+      fs.readFile('../client/index.html', function(err, data) {
+       res.writeHead(200, {'Content-Type': 'text/html'});
+       res.end(data);
+       if (err) throw err;
+      });
     break
     case '/mockups.json':
       res.setHeader('Access-Control-Allow-Origin', '*')
       res.writeHead(200)
       res.end(mockupJsonData)
-    break
-    case '/client/index.html':
-      res.end()
     break
     default:
       res.writeHead(404)
