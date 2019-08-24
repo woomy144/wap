@@ -4930,7 +4930,7 @@ var indpath = path.join(__dirname, '..', 'client', 'index.html');
 /** BUILD THE SERVERS **/  
 // Turn the server on
 let server = http.createServer((req, res) => {
-  let { pathname } = url.parse(req.url)
+  /*let { pathname } = url.parse(req.url)
   switch (pathname) {
     case '/':
       fs.readFile(indpath, function(err, data) {
@@ -4947,20 +4947,20 @@ let server = http.createServer((req, res) => {
     default:
       res.writeHead(404)
       res.end()
-  }
+  }*/
 })
 
 let websockets = (() => {
     // Configure the websocketserver
     let config = { server: server }
-        server.listen(process.env.PORT || 8080, function httpListening() {
+        /*server.listen(process.env.PORT || 8080, function httpListening() {
             util.log((new Date()) + ". Joint HTTP+Websocket server turned on, listening on port "+server.address().port + ".")
-        })
-    /*if (c.servesStatic) {
+        })*/
+    if (c.servesStatic) {
     } else {
-        config.port = 8080; 
-        util.log((new Date()) + 'Websocket server turned on, listening on port ' + 8080 + '.'); 
-    }*/
+        config.port = 3000; 
+        util.log((new Date()) + '. Websocket server turned on, listening on port ' + 3000 + '.'); 
+    }
     // Build it
     return new WebSocket.Server(config)
 })().on('connection', sockets.connect); 
