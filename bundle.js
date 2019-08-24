@@ -1043,7 +1043,7 @@
                     }) => !h.includes(b));
                     return c.map(b => b.to).join(" ")
                 },
-                aa = document.getElementById("serverSelector").parentNode.parentNode,
+                /*aa = document.getElementById("serverSelector").parentNode.parentNode,
                 ab = document.getElementById("serverSelector"),
                 ea;
             for (let a of b.servers) {
@@ -1092,7 +1092,7 @@
                     return () => {
                         b || (b = !0, f())
                     }
-                })(),
+                })(),*/
                 sa = document.getElementById("patchNotes"),
                 Ka = (b, a) => {
                     var c = b.shift();
