@@ -242,8 +242,8 @@ a.menuTab:link:hover, a.menuTab:visited:hover {
 }
 
 .changelogSelectorContainer {
-  height: 15px;
-  font: bold 12px Ubuntu;
+  height: 25px;
+  font: bold 20px Ubuntu;
   text-align: center;
   padding: 0 15px 5px 0;
   overflow: auto hidden;

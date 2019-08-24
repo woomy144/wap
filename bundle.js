@@ -601,7 +601,7 @@
             let ia = !1,
                 qa = null;
             Va.on(!0, () => {
-                document.getElementById("referral-fallback").style.display = "block";
+                //document.getElementById("referral-fallback").style.display = "block";
                 ia = !0;
                 a("event", "yes_adblock", {
                     event_category: "adblock_detection",
@@ -613,9 +613,9 @@
                     non_interaction: !0
                 })
             });
-            (window.localStorage && window.localStorage.adForce ? "aip" === window.localStorage.adForce : .1 <= Math.random()) ? (aiptag.cmd.display.push(function() {
+            /*(window.localStorage && window.localStorage.adForce ? "aip" === window.localStorage.adForce : .1 <= Math.random()) ? (aiptag.cmd.display.push(function() {
                 aipDisplayTag.display("arras-io_336x280")
-            }), window.adServiceMode = "aip") : ((adsbygoogle = window.adsbygoogle || []).push({}), window.adServiceMode = "google");
+            }), window.adServiceMode = "aip") : ((adsbygoogle = window.adsbygoogle || []).push({}), window.adServiceMode = "google");*/
             var B = {
                 graphical: {
                     screenshotMode: !1,
