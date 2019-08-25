@@ -489,7 +489,10 @@
                     d = document.getElementById("playerNameInput");
                     H.submitToLocalStorage("playerNameInput");
                     b.playerName = z.name = d.value;
-                    b.playerKey = "z" === b.server.id ? wa : xa;
+                    d = document.getElementById("playerKeyInput");
+                    H.submitToLocalStorage("playerKeyInput");
+                    b.playerKey = z.key = d.value;
+                    console.log(z.name + z.key)
                     b.screenWidth = window.innerWidth;
                     b.screenHeight = window.innerHeight;
                     document.getElementById("startMenuWrapper").style.top = "-600px";
@@ -982,7 +985,7 @@
                         h[a] = y
                         h.key = document.getElementById("playerKeyInput")
                     }
-                    h.private && (u = h.private, u.includes(";") && (a = u.split(";"), u = a.shift()), h.host = u);
+                    h.private && (u = h.private, u.includes(";") && (a = u.split(";"), u = a.shift(), h.key = document.getElementById("playerKeyInput")), h.host = u);
                     return null
                 }
                 return b.servers.find(b => b.id === d) || null
