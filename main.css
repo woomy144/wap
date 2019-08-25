@@ -202,7 +202,7 @@ body.mobile #linkHolder { display: none; }
 }
 
 .startMenuHolder.shrinkable {
-  width: calc(100% - 355px);
+  width: calc(100% - 394px);
 }
 body.mobile .startMenuHolder {
   height: 300px;
@@ -459,7 +459,7 @@ body.mobile .icon {
 }
 
 #patchNotes table.poll-list {
-  margin: 8px 5px 20px;
+  margin: 8px 0px 20px 5px;
 }
 #patchNotes table.poll-table {
   text-align: center;
