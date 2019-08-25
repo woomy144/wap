@@ -2343,8 +2343,8 @@
                         W = [m(), m(), m(), m(), m(), m(), m()],
                         V = m(),
                         ca = [m(), m(), m(), m(), m(), m(), m(), m(), m(), m()],
-                        aa = [m(), m(), m(), m(), m(), m(), m(), m(), m()],
-                        ea = [m(), m(), m(), m(), m(), m(), m(), m(), m()],
+                        aa = [m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m()],
+                        ea = [m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m()],
                         fa = m();
                     return c => {
                         Date.now();
@@ -2698,13 +2698,13 @@
                                 if (B.graphical.screenshotMode) W[6].draw("Arras.io", h + 200, m - 2, 15, l.guiwhite, "right");
                                 else {
                                     if (b.showDebug) {
-                                        W[6].draw("Arras.io",
+                                        W[6].draw("Arras Template",
                                             h + 200, m - 84 - 2, 15, l.guiwhite, "right");
                                         let b = t.getPeriodicAverage();
                                         W[5].draw("Tank Speed: " + y.toFixed(2) + " gu/s" + (b && .005 <= b ? ` (${b.toFixed(2)} gu/s)` : ""), h + 200, m - 70, 10, l.guiwhite, "right");
                                         W[4].draw("Prediction: " + d.toFixed(3), h + 200, m - 56, 10, l.guiwhite, "right");
                                         W[3].draw("Update Rate: " + J.updatetime + "Hz", h + 200, m - 42, 10, l.guiwhite, "right")
-                                    } else W[6].draw("Arras.io", h + 200, m - 42 - 2, 15, l.guiwhite, "right");
+                                    } else W[6].draw("Arras Template", h + 200, m - 42 - 2, 15, l.guiwhite, "right");
                                     W[2].draw("Client Speed: " + J.rendertime + " FPS", h + 200, m - 28, 10, 10 < J.rendertime ? l.guiwhite : l.orange, "right");
                                     W[1].draw("Server Speed: " + (100 * A.fps).toFixed(2) + "%", h + 200, m - 14, 10, 1 === A.fps ? l.guiwhite : l.orange, "right");
                                     W[0].draw(v.toFixed(1) + " ms  " + b.server.code + " :" + b.server.type + ":", h + 200, m, 10, l.guiwhite, "right")
@@ -2765,7 +2765,7 @@
                                         ba(c + 50 - v * m.middle.x * Math.cos(la), d + 50 - v * m.middle.x *
                                             Math.sin(la), t, 1, 1, v / t.size, la, !0);
                                         m = (b.help[`KEY_CHOOSE_${x+1}`] || "").toLowerCase().trim();
-                                        !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 11].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
+                                        !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
                                         g.strokeStyle = l.black;
                                         g.globalAlpha = 1;
                                         g.lineWidth = 3;
