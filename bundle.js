@@ -981,21 +981,8 @@
                         y = y.join("=") || !0;
                         h[a] = y
                     }
-                    h.private && (u = h.private, u.includes(";") && (a = u.split(";"), u = a.shift(), h.key = a.join(";")), h.host = u);
-                    if (h.host) {
-                        let {
-                            region: a,
-                            mode: c,
-                            host: y,
-                            key: u
-                        } = h;
-                        h = `z-${a||"unknown"}-${c||"p"}-${y.toLowerCase().replace(/(\.[^\.]+)?\.[^\.]+$/,"").replace(/[^a-z0-9\-]/,"-")}`;
-                        b.servers[0].code = h;
-                        b.servers[0].at = y;
-                        d =
-                            "z";
-                        wa = u || null
-                    } else return null
+                    h.private && (u = h.private, u.includes(";") && (a = u.split(";"), u = a.shift(), h.key = ""), h.host = u);
+                    return null
                 }
                 return b.servers.find(b => b.id === d) || null
             })(location.hash) || b.servers.find(b => b.id === N.gameMode) || Za();
