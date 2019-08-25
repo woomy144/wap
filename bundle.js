@@ -700,7 +700,7 @@
                 })();
                 return {
                     stat: b(10),
-                    upgrade: b(9),
+                    upgrade: b(15),
                     hover: b(1),
                     skipUpgrades: b(1)
                 }
