@@ -3193,16 +3193,16 @@
                 ],
                 timezone: (new Date).getTimezoneOffset() / -60,
                 servers: [{
-                    id: "z",
+                    id: "x",
                     type: "0unk",
                     code: "z-unknown-pe6server",
                     at: "private",
                     untrusted: !0
                 }, {
-                    id: "sa",
+                    id: "a",
                     type: "1ffa",
                     code: "your-server-f",
-                    at: p.glitch("oa")
+                    at: p.glitch("your server name here")
                 },].map((a, e) => ({
                     data: a,
                     i: e
