@@ -980,8 +980,9 @@
                         a = y.shift();
                         y = y.join("=") || !0;
                         h[a] = y
+                        h.key = document.getElementById("playerKeyInput")
                     }
-                    h.private && (u = h.private, u.includes(";") && (a = u.split(";"), u = a.shift(), h.key = ""), h.host = u);
+                    h.private && (u = h.private, u.includes(";") && (a = u.split(";"), u = a.shift()), h.host = u);
                     return null
                 }
                 return b.servers.find(b => b.id === d) || null
