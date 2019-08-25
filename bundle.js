@@ -2191,9 +2191,7 @@
                                 for (w = q.guns.getPositions(),
                                     A = 0; A < n.guns.length; A++) {
                                     var D = n.guns[A],
-                                        v = (D.color != null) ? T(e(D.color), F.status.getColor(), F.status.getBlend()) : T(l.grey, F.status.getColor(), F.status.getBlend());
-                                        k(h, v);
-                                    var r = 1 === D.aspect ? w[A] / 2 : w[A]; {
+                                        r = 1 === D.aspect ? w[A] / 2 : w[A]; {
                                         d = h;
                                         v = y + f * (D.offset * Math.cos(D.direction + D.angle + m) + (D.length / 2 - r) * Math.cos(D.angle + m));
                                         r = R + f * (D.offset * Math.sin(D.direction + D.angle + m) + (D.length / 2 - r) * Math.sin(D.angle + m));
@@ -2207,6 +2205,8 @@
                                         let b = Math.atan2(L, C);
                                         X = Math.sqrt(C * C + X * X);
                                         C = Math.sqrt(C * C + L * L);
+                                        var lol = (D.color != null) ? T(e(D.color), F.status.getColor(), F.status.getBlend()) : T(l.grey, F.status.getColor(), F.status.getBlend());
+                                        k(h, lol);
                                         d.beginPath();
                                         d.moveTo(v + X * Math.cos(D + G), r + X * Math.sin(D + G));
                                         d.lineTo(v +
