@@ -133,6 +133,10 @@ input {
   font-size: larger;
 }
 
+#playerKeyInput {
+  padding: 5px;
+}
+
 input:focus {
   border: solid 1px #CCCCCC;
 }

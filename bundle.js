@@ -1043,10 +1043,10 @@
                     }) => !h.includes(b));
                     return c.map(b => b.to).join(" ")
                 },
-                /*aa = document.getElementById("serverSelector").parentNode.parentNode,
-                ab = document.getElementById("serverSelector"),
+                aa = null,
+                ab = null,
                 ea;
-            for (let a of b.servers) {
+            for (let a of b.servers) {/*
                 if ((null ==
                         a.visible || a.visible > Ha) && b.server !== a) continue;
                 let [d, c, h] = a.code.split("-"), u = document.createElement("tr");
@@ -1068,7 +1068,7 @@
                 ab.appendChild(u);
                 b.server === a && (ea = u, ea.classList.add("selected"), setTimeout(() => {
                     aa.scrollTop = u.offsetTop - 30
-                }))
+                }))*/
             }
             let bb = (() => {
                     let b = !1,
@@ -1092,7 +1092,7 @@
                     return () => {
                         b || (b = !0, f())
                     }
-                })(),*/
+                })(),
                 sa = document.getElementById("patchNotes"),
                 Ka = (b, a) => {
                     var c = b.shift();
