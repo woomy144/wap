@@ -6,7 +6,7 @@
 ****
 ## Instructions:
 - You dont need to touch the server.
-1. Navigate to bundle.js, column 3205.
+1. Navigate to bundle.js, column 3213.
 2. Change 'arras-template' to your private server name.
 3. ...
 4. Profit!
