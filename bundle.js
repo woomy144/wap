@@ -2104,52 +2104,28 @@
                     }
                 })(),
                 ba = (() => {
-                    function b(b, a, d, e, g, f = 0, z) {
-                        b.beginPath();
-                        if (g)
-                            if (g instanceof Array) {
-                                var c = Math.cos(f);
-                                f = Math.sin(f);
-                                for (let [h, l] of g) b.lineTo(a + e * (h * c - l * f), d + e * (l * c + h * f));
-                                b.closePath()
-                            } else {
-                                if ("string" === typeof g) {
-                                    g = new Path2D(g);
-                                    b.save();
-                                    b.translate(a, d);
-                                    b.scale(e, e);
-                                    b.lineWidth /= e;
-                                    b.rotate(f);
-                                    B.graphical.inversedRender ? (b.stroke(g), b.fill(g)) : (b.fill(g), b.stroke(g));
-                                    b.restore();
-                                    return
-                                }
-                                if (0 > g) {
-                                    0 === g % 2 && (f += Math.PI / g);
-                                    g = -g;
-                                    let l = 1 - 6 / (g * g);
-                                    B.graphical.pointy && (b.lineJoin = "miter");
-                                    b.moveTo(a + e * Math.cos(f), d + e * Math.sin(f));
-                                    for (let k = 0; k < g; k++) {
-                                        c = (k + 1) / g * 2 * Math.PI;
-                                        var h = (k + .5) / g * 2 * Math.PI;
-                                        b.quadraticCurveTo(a + e * l * Math.cos(h + f), d + e * l * Math.sin(h + f), a + e * Math.cos(c + f), d + e * Math.sin(c + f))
-                                    }
-                                    B.graphical.pointy && b.closePath();
-                                    B.graphical.inversedRender ?
-                                        (b.stroke(), b.fill()) : (b.fill(), b.stroke());
-                                    B.graphical.pointy && (b.lineJoin = "round");
-                                    return
-                                }
-                                if (0 < g) {
-                                    0 === g % 2 && (f += Math.PI / g);
-                                    for (c = 0; c < g; c++) h = c / g * 2 * Math.PI, b.lineTo(a + e * Math.cos(h + f), d + e * Math.sin(h + f));
-                                    b.closePath()
-                                }
-                            }
-                        else b.arc(a, d, e, 0, 2 * Math.PI);
-                        B.graphical.inversedRender ? (b.stroke(), b.fill()) : (b.fill(), b.stroke())
-                    }
+                     function drawTrapezoid(context, x, y, length, height, aspect, angle, skin) {
+                    let h = [];
+                    h = aspect > 0 ? [height * aspect, height] : [height, -height * aspect];
+                    let r = [
+                            Math.atan2(h[0], length),
+                            Math.atan2(h[1], length)
+                        ],
+                        l = [
+                            Math.sqrt(length * length + h[0] * h[0]),
+                            Math.sqrt(length * length + h[1] * h[1])
+                        ];
+                    context.beginPath();
+                            context.lineTo(x + l[0] * Math.cos(angle + r[0]), y + l[0] * Math.sin(angle + r[0]));
+                            context.lineTo(x + l[1] * Math.cos(angle + Math.PI - r[1]), y + l[1] * Math.sin(angle + Math.PI - r[1]));
+                            context.lineTo(x + l[1] * Math.cos(angle + Math.PI + r[1]), y + l[1] * Math.sin(angle + Math.PI + r[1]));
+                            context.lineTo(x + l[0] * Math.cos(angle - r[0]), y + l[0] * Math.sin(angle - r[0]));
+                            
+                    context.lineJoin = b.graphical.pointy ? 'miter' : 'round';
+                    context.closePath();
+                    context.stroke();
+                    context.fill();
+                }
                     return (a, c, d, x, t = 1, f = 1, m = 0, p = !1, z = !1, q = !1, F = d.render) => {
                         let h = z || g,
                             u = q ? 1 : F.status.getFade();
