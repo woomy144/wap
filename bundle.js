@@ -300,6 +300,7 @@
                     tiggle: 0,
                     layer: c.layer,
                     guns: {
+                        color: c.guns.color,
                         length: c.guns.length,
                         getPositions: () => Array(c.guns.length).fill(0),
                         update: () => {}
