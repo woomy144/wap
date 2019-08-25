@@ -2107,7 +2107,7 @@
                     }
                 })(),
                 ba = (() => {
-                    function b(b, a, d, e, g, f = 0, z) {
+                    function b(b, a, d, e, g, f = 0) {
                         b.beginPath();
                         if (g)
                             if (g instanceof Array) {
@@ -2131,7 +2131,7 @@
                                     0 === g % 2 && (f += Math.PI / g);
                                     g = -g;
                                     let l = 1 - 6 / (g * g);
-                                    b.lineJoin = B.graphical.sharp ? 'miter' : 'round';
+                                    b.lineJoin = B.graphical.pointy ? 'miter' : 'round';
                                     b.moveTo(a + e * Math.cos(f), d + e * Math.sin(f));
                                     for (let k = 0; k < g; k++) {
                                         c = (k + 1) / g * 2 * Math.PI;
@@ -2141,8 +2141,7 @@
                                     B.graphical.pointy && b.closePath();
                                     B.graphical.inversedRender ?
                                         (b.stroke(), b.fill()) : (b.fill(), b.stroke());
-                                  b.lineJoin = B.graphical.sharp ? 'miter' : 'round';
-                                    //B.graphical.pointy && (b.lineJoin = "round");
+                                  b.lineJoin = B.graphical.pointy ? 'miter' : 'round';
                                     return
                                 }
                                 if (0 < g) {
