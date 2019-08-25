@@ -456,6 +456,8 @@
                     H.submitToLocalStorage("optFancy");
                     B.graphical.pointy = !document.getElementById("optNoPointy").checked;
                     H.submitToLocalStorage("optNoPointy");
+                    B.graphical.sharp = !document.getElementById("optPointy").checked;
+                    H.submitToLocalStorage("optPointy");
                     B.graphical.fancyAnimations = !document.getElementById("optFancy").checked;
                     H.submitToLocalStorage("optShield");
                     B.graphical.shieldbars = document.getElementById("optShield").checked;
@@ -634,6 +636,7 @@
                     fancyAnimations: !0,
                     colors: "normal",
                     pointy: !0,
+                    sharp: !1,
                     fontSizeBoost: 1,
                     shieldbars: !1,
                     neon: !1
@@ -2128,7 +2131,7 @@
                                     0 === g % 2 && (f += Math.PI / g);
                                     g = -g;
                                     let l = 1 - 6 / (g * g);
-                                    B.graphical.pointy && (b.lineJoin = "miter");
+                                    b.lineJoin = B.graphical.sharp ? 'miter' : 'round';
                                     b.moveTo(a + e * Math.cos(f), d + e * Math.sin(f));
                                     for (let k = 0; k < g; k++) {
                                         c = (k + 1) / g * 2 * Math.PI;
@@ -2138,7 +2141,7 @@
                                     B.graphical.pointy && b.closePath();
                                     B.graphical.inversedRender ?
                                         (b.stroke(), b.fill()) : (b.fill(), b.stroke());
-                                  b.lineJoin = B.graphical.pointy ? 'miter' : 'round';
+                                  b.lineJoin = B.graphical.sharp ? 'miter' : 'round';
                                     //B.graphical.pointy && (b.lineJoin = "round");
                                     return
                                 }
@@ -2167,7 +2170,7 @@
                                 else if (.5 > u * t) return;
                             "object" !== typeof h && (h = g);
                             h.lineCap = "round";
-                            h.lineJoin = "round";
+                            b.lineJoin = B.graphical.sharp ? 'miter' : 'round';
                             if (q.turrets.length === n.turrets.length)
                                 for (var E = 0; E < n.turrets.length; E++) {
                                     var v = n.turrets[E];
