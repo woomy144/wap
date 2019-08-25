@@ -1051,9 +1051,9 @@
                 u.onclick = () => {
                     ea.classList.remove("selected");
                     ea = u;
-                    ea.classList.add("selected");
+                    ea.classList.add("selected");*/
                     b.server = a;
-                    b.partyLink = 0;
+                    /*b.partyLink = 0;
                     N.gameMode = a.id;
                     location.hash = "#" +
                         a.id;
@@ -1061,7 +1061,7 @@
                 };
                 ab.appendChild(u);
                 b.server === a && (ea = u, ea.classList.add("selected"), setTimeout(() => {
-                    aa.scrollTop = u.offsetTop - 30
+                    aa.scrollTop = u.offsetTop - 30;
                 }))*/
             }
             let bb = (() => {
@@ -2181,15 +2181,15 @@
                             h.lineWidth = Math.max(B.graphical.mininumBorderChunk, x * B.graphical.borderChunk);
                             E = F.status.getColor();
                             w = F.status.getBlend();
-                            v = T(l.grey, E, w);
                             E = T(e(d.color), E, w);
                             d.invuln && 100 > (Date.now() - d.invuln) % 200 && (v = T(v, l.vlgrey, .3), E = T(E, l.vlgrey, .3));
-                            k(h, v);
                             if (q.guns.length === n.guns.length)
                                 for (w = q.guns.getPositions(),
                                     A = 0; A < n.guns.length; A++) {
                                     var D = n.guns[A],
-                                        r = 1 === D.aspect ? w[A] / 2 : w[A]; {
+                                        v = () ? T(e(D.color), F.status.getColor(), F.status.getBlend()); : 
+                                        k(h, v);
+                                    var r = 1 === D.aspect ? w[A] / 2 : w[A]; {
                                         d = h;
                                         v = y + f * (D.offset * Math.cos(D.direction + D.angle + m) + (D.length / 2 - r) * Math.cos(D.angle + m));
                                         r = R + f * (D.offset * Math.sin(D.direction + D.angle + m) + (D.length / 2 - r) * Math.sin(D.angle + m));
