@@ -202,7 +202,7 @@ body.mobile #linkHolder { display: none; }
 }
 
 .startMenuHolder.shrinkable {
-  width: calc(149% - 755px);
+  width: calc(100% - 355px);
 }
 body.mobile .startMenuHolder {
   height: 300px;

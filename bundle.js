@@ -456,7 +456,7 @@
                     H.submitToLocalStorage("optFancy");
                     B.graphical.pointy = !document.getElementById("optNoPointy").checked;
                     H.submitToLocalStorage("optNoPointy");
-                    B.graphical.sharp = !document.getElementById("optPointy").checked;
+                    B.graphical.sharp = document.getElementById("optPointy").checked;
                     H.submitToLocalStorage("optPointy");
                     B.graphical.fancyAnimations = !document.getElementById("optFancy").checked;
                     H.submitToLocalStorage("optShield");
