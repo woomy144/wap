@@ -2170,7 +2170,7 @@
                                 else if (.5 > u * t) return;
                             "object" !== typeof h && (h = g);
                             h.lineCap = "round";
-                            b.lineJoin = B.graphical.sharp ? 'miter' : 'round';
+                            h.lineJoin = B.graphical.sharp ? 'miter' : 'round';
                             if (q.turrets.length === n.turrets.length)
                                 for (var E = 0; E < n.turrets.length; E++) {
                                     var v = n.turrets[E];

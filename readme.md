@@ -16,4 +16,5 @@
 - max tanks on upgrade increased. (from 9 to 15)
 - Colors (Rainbow = 36, Default 35 Colors, Colored Nests)
 - You can use your token with new token input instead of adding it to the link!
-- (Planned) Custom Colored Barrels.
+- Sharp Edges!
+- (Planned) Custom Colored Barrels!
