@@ -2187,7 +2187,7 @@
                                 for (w = q.guns.getPositions(),
                                     A = 0; A < n.guns.length; A++) {
                                     var D = n.guns[A],
-                                        v = () ? T(e(D.color), F.status.getColor(), F.status.getBlend()); : 
+                                        v = (D.color != null) ? T(e(D.color), F.status.getColor(), F.status.getBlend()) : T(l.grey, F.status.getColor(), F.status.getBlend());
                                         k(h, v);
                                     var r = 1 === D.aspect ? w[A] / 2 : w[A]; {
                                         d = h;
@@ -2343,7 +2343,7 @@
                         W = [m(), m(), m(), m(), m(), m(), m()],
                         V = m(),
                         ca = [m(), m(), m(), m(), m(), m(), m(), m(), m(), m()],
-                        aa = [m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m()],
+                        aa = [m(), m(), m(), m(), m(), m(), m(), m(), m()],
                         ea = [m(), m(), m(), m(), m(), m(), m(), m(), m()],
                         fa = m();
                     return c => {
@@ -2765,7 +2765,7 @@
                                         ba(c + 50 - v * m.middle.x * Math.cos(la), d + 50 - v * m.middle.x *
                                             Math.sin(la), t, 1, 1, v / t.size, la, !0);
                                         m = (b.help[`KEY_CHOOSE_${x+1}`] || "").toLowerCase().trim();
-                                        !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
+                                        !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 11].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
                                         g.strokeStyle = l.black;
                                         g.globalAlpha = 1;
                                         g.lineWidth = 3;
@@ -3206,7 +3206,7 @@
                     id: "a",
                     type: "1ffa",
                     code: "your-server-f",
-                    at: p.glitch("arras-template"),
+                    at: p.glitch("arras0"),
                 },].map((a, e) => ({
                     data: a,
                     i: e
