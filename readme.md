@@ -1,7 +1,7 @@
 # A fan-made sequel to diep.io, this time ran by a console controller with swords.
-_____
+****
 ## Requirements:
-- A Private Arras Server.
+- A Private Arras Server. (incompatible with kot32 arras servers.)
 - Remixed version of this.
 ****
 ## Instructions:
@@ -13,5 +13,5 @@ _____
 ****
 ## Features:
 - max tanks on upgrade increased. (from 9 to 15)
-- More colors (Rainbow = 36, Default 35 Colors, Colored Nests)
-
+- Colors (Rainbow = 36, Default 35 Colors, Colored Nests)
+> Credit me on your servers or i will remove kebab. (joke)

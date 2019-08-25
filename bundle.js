@@ -3206,7 +3206,7 @@
                     id: "a",
                     type: "1ffa",
                     code: "your-server-f",
-                    at: p.glitch("arras-template")
+                    at: p.glitch("arras-template"),
                 },].map((a, e) => ({
                     data: a,
                     i: e
