@@ -166,7 +166,7 @@ input.error {
   margin: 0 8px;
 }
 
-body.mobile #mainWrapper { padding: 10px 10px 0; }
+body.mobile #mainWrapper { padding: 50px 50px 0; }
 body.mobile #startMenu { max-height: 340px; }
 body.mobile #linkHolder { display: none; }
 

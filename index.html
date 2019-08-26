@@ -23,8 +23,7 @@
   aiptag.gdprShowConsentTool = true;
   </script>
   <!-- Favicons -->
-  <link rel="icon" type="image/png" sizes="256x256" href="http://arras.io/favicon/96x96.png">
-  <link rel="manifest" href="/favicon/manifest.json">
+  <link rel="icon" type="image/png" sizes="256x256" href="https://arras.io/favicon/96x96.png">
   <meta name="theme-color" content="#8abc3f">
 </head>
 <!-- https://discordapp.com/oauth2/authorize?client_id=427927499071160320&redirect_uri=http%3A%2F%2Farras.io%2Fcallback&response_type=code&scope=identify%20email -->
@@ -44,7 +43,7 @@
         <div class="startMenuHolder">
           <div class="sliderHolder">
             <div class="slider startMenuSlidingContent">
-              <center><img src="http://arras.io/favicon/96x96.png" class="icon" alt="arras icon"></center>
+              <center><img src="https://arras.io/favicon/96x96.png" class="icon" alt="arras icon"></center>
               <h1>Arras Template</h1>
               <input type="text" autofocus tabindex="1" spellcheck="false" placeholder="This is the tale of" id="playerNameInput" maxlength="28">
               <input type="text" tabindex="1" placeholder="Token (leave blank if not beta-tester)" id="playerKeyInput" maxlength="48">
@@ -178,9 +177,6 @@
   </div>
   <!-- JS -->
   <script>
-  if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(registration => console.log('Service Worker Registered'))
-  }
   window.onerror = function(message, source, lineno, colno, error) {
     window.onerror = null
     if (error) error = error.toString()
