@@ -1301,6 +1301,7 @@
             H.retrieveFromLocalStorage("optBorders");
             H.retrieveFromLocalStorage("optAutoLevel", b.mobile);
             H.retrieveFromLocalStorage("optPrediction");
+            H.retrieveFromLocalStorage("optPointy");
             b.mobile && H.retrieveFromLocalStorage("optMobile");
             H.retrieveFromLocalStorage("optCustom");
             "" === document.getElementById("optColors").value && (document.getElementById("optColors").value = "normal");
