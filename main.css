@@ -300,7 +300,7 @@ a.menuTab:link:hover, a.menuTab:visited:hover {
 
 .sliderHolder {
   width: 350px;
-  height: 295px;
+  height: 300px;
   overflow: hidden;
 }
 body.mobile .sliderHolder {

@@ -9,11 +9,11 @@
 ****
 ## Instructions:
 - You dont need to touch the server.
-1. Navigate to bundle.js, column 3213.
+1. Navigate to bundle.js, column 3214.
 2. Change 'arras-template' to your private server name.
 3. ...
 4. Profit!
-- don't forget to credit me :)
+- don't forget to credit me :) (jk)
 ****
 ## Features and Differences:
 - max tanks on upgrade increased. (from 9 to 15)

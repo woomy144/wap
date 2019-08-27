@@ -1293,6 +1293,7 @@
                 return e
             })();
             H.retrieveFromLocalStorage("playerNameInput");
+            H.retrieveFromLocalStorage("playerKeyInput");
             H.retrieveFromLocalStorage("optScreenshotMode");
             H.retrieveFromLocalStorage("optShield");
             H.retrieveFromLocalStorage("optFancy");
