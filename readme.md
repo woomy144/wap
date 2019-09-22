@@ -2,11 +2,11 @@
 <sub><sup>
     (Imperium#9339)
 </sub></sup>
-# Important: Don't use Name Colors yet because it may reveal your server token.
 ****
 ## Requirements:
 - A Private Arras Server. (incompatible with kot32 arras servers.)
 - Remixed version of this.
+# Important: Don't use Name Colors yet because it may reveal your server token. you may still use this template because this template has a few fixes.
 ****
 ## Instructions:
 - You dont need to touch the server.
