@@ -11,8 +11,8 @@
 - You dont need to touch the server.
 1. Navigate to bundle.js, column 3214.
 2. Change 'arras-template' to your private server name.
-3. ...
-4. Profit!
+#### If you want Name Colors:
+4. add your token from your private server to .env file. Don't worry, no-one except you (and collaborators) can see it.
 - don't forget to credit me :) (jk)
 ****
 ## Features and Differences:
