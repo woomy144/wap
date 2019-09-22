@@ -2,6 +2,7 @@
 <sub><sup>
     (Imperium#9339)
 </sub></sup>
+# Important: Don't use Name Colors yet because it may reveal your server token.
 ****
 ## Requirements:
 - A Private Arras Server. (incompatible with kot32 arras servers.)
@@ -12,7 +13,9 @@
 1. Navigate to bundle.js, column 3223.
 2. Change 'arras-template' to your private server name.
 #### If you want Name Colors:
-4. add your token from your private server to .env file. Don't worry, no-one except you (and collaborators) can see it.
+4. Navigate to bundle.js, column 557.
+5. Change the "" to "(your token)". Don't use brackets.
+Important Note: don't forget to obfuscate or encode your bundle.js or anyone that can visit this client can search and see it. 
 - don't forget to credit me :) (jk)
 ****
 ## Features and Differences:
