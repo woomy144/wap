@@ -20,3 +20,5 @@
 - Colors (Rainbow = 36, Default 35 Colors, Colored Nests)
 - You can use your token with new token input instead of adding it to the link!
 - Sharp Edges!
+#### v1.0.1:
+- Name Colors!
