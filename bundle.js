@@ -255,7 +255,7 @@
                     case "edge":
                         return T(l.white, l.guiblack, 1 / 3);
                     case "dor1":
-                        return l.vlgrey;
+                        return l.vl;
                     case "nest":
                         return l.lavender;
                     default:
@@ -1714,7 +1714,7 @@
                                 n && (n = parseInt(a.next(), 36), A.skills[0].amount = n / 68719476736 & 15, A.skills[1].amount = n / 4294967296 & 15, A.skills[2].amount = n / 268435456 & 15, A.skills[3].amount = n / 16777216 & 15, A.skills[4].amount = n / 1048576 & 15, A.skills[5].amount = n / 65536 & 15, A.skills[6].amount = n / 4096 & 15, A.skills[7].amount = n / 256 & 15, A.skills[8].amount = n / 16 & 15, A.skills[9].amount = n / 1 & 15);
                                 k && (A.accel = a.next());
                                 x && (A.party = a.next(), "z" !== b.server.id && (location.hash =
-                                    "#" + b.server.id + (A.party || "")))
+                                    "#" + b.server.id))
                             },
                             broadcast: () => {
                                 var c = a.all();
@@ -1955,7 +1955,7 @@
                     };
                     g.onerror = function(a) {
                         console.warn("WebSocket error", a);
-                        b.message || (b.message = "Socket error. Maybe another server will work.");
+                        b.message || (b.message = "Socket error. Try again later.");
                         b.isInGame = !1
                     };
                     return g
