@@ -554,7 +554,7 @@
                 g.strokeStyle = u;
                 g.stroke()
             }
-            var somethinglolcuzimlazy = "This@user"
+            var somethinglolcuzimlazy = "Thisuser"
             function Qa(b, a, c, h, u) {
                 if (!(.05 > u)) {
                     var d = c.render.status.getFade();
